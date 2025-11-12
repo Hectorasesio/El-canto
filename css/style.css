@@ -20,22 +20,18 @@
 }
 
 
-/* Reveal + Zoom */
-[class*="reveal-zoom"] {
-  opacity: 0;
-  transform: scale(0.98) translateY(6px);
-  transition: opacity 0.7s cubic-bezier(.2,.9,.2,1), transform 0.7s cubic-bezier(.2,.9,.2,1);
-  will-change: transform, opacity;
+[class*="display-1"] {
+  font-weight: 400;
 }
 
-.reveal-zoom.is-visible {
-  opacity: 1;
-  transform: scale(1) translateY(0);
+[class*="hf"] {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
-/* Scroll-driven zoom (transform origin centered by default) */
-[class*="reveal-zoom"] {
-  transform: scale(1);
-  transition: transform 0.15s linear; /* small smoothing for abrupt jumps */
-  will-change: transform;
+[class*="gf"] {
+  font-family: "Instrument Serif", serif;
+  font-weight: 500;
+  font-style: normal;
 }
