@@ -19,6 +19,9 @@
   height: 50vh;
 }
 
+[class*="vh-5"] {
+  height: 5vh;
+}
 
 [class*="display-1"] {
   font-weight: 400;
@@ -34,4 +37,36 @@
   font-family: "Instrument Serif", serif;
   font-weight: 500;
   font-style: normal;
+}
+
+
+#f1_container {
+  position: relative;
+  width: 50px;
+  height: 30px;
+}
+#f1_container {
+  /* perspective: 1000; */
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  position: relative;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.face.back {
+  transform: rotateY(180deg);
+}
+.face img{
+	height:100%;
+	width:100%;
 }
