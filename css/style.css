@@ -71,3 +71,44 @@
 	width:100%;
 }
 
+.footer-enhanced {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.footer-enhanced h5,
+.footer-enhanced h6 {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 0;
+  transition: .3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  padding-left: 4px;     /* efecto sutil de "slide" */
+}
+
+.footer-enhanced p,
+.footer-enhanced li {
+  line-height: 1.5;
+}
+
+.border-top {
+  border-color: rgba(255,255,255,0.1) !important;
+}
+.footer-enhanced {
+  animation: footerFadeUp .7s ease;
+}
+
+@keyframes footerFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
