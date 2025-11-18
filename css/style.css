@@ -23,6 +23,18 @@
   height: 50vh !important;
 }
 
+.vh-75 {
+  height: 75vh !important;
+}
+
+.hover-video {
+  transition: transform 0.3s cubic-bezier(0.48,0,0.32,1.04);
+}
+.hover-video:hover {
+  transform: scale(1.1); /* Hazlo más grande en hover */
+  z-index: 2; /* Opcional, para que esté delante de otros elementos */
+}
+
 [class*="display-1"] {
   font-weight: 400;
 }
