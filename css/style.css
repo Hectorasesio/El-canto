@@ -92,7 +92,7 @@
 
 .footer-link:hover {
   color: #fff;
-  padding-left: 4px;     /* efecto sutil de "slide" */
+  padding-left: 4px;    
 }
 
 .footer-enhanced p,
@@ -112,3 +112,70 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+
+.shop-hero-minimal {
+  background-color: #f3f3f3;
+}
+
+.shop-hero-minimal h2 {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.shop-hero-minimal .tracking {
+  letter-spacing: 0.2em;
+}
+
+.shop-grid {
+  background-color: #f3f3f3;
+}
+
+.shop-item {
+  font-family: inherit;
+}
+
+.shop-item-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.shop-item-image-wrapper {
+  background-color: #e8e8e8;
+  padding: 0;
+  overflow: hidden;
+}
+
+.shop-item-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+/* Hover sutil tipo portfolio */
+.shop-item:hover .shop-item-image {
+  transform: scale(1.02);
+}
+
+.shop-item-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 6px;
+  color: #333;
+}
+
+.shop-item-name {
+  opacity: 0.85;
+}
+
+.shop-item-price {
+  opacity: 0.7;
+}
