@@ -272,3 +272,9 @@ body {
 transform: scale(1.2); 
 transform: rotate(5deg);
 }
+
+
+section .flip-container {
+  width: 100%;   /* Ajusta al tamaño de tus imágenes */
+  height: 400px;
+}
