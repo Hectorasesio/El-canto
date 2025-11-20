@@ -68,8 +68,6 @@ body {
   color: var(--color-canto);
 }
 
-[class*="cp"] {
-}
 
 .bg-body-tertiary{
   --bs-bg-opacity: 0;
@@ -107,11 +105,17 @@ body {
   transform: rotateY(180deg);
 }
 
-
-
 .footer-enhanced {
-  background: #0f0f0f;
-  color: #fff;
+    background-image: linear-gradient(
+    160deg,
+    #181818,
+    #888888,
+    #c9c9c9,
+    #888888,
+    #181818
+  );
+  
+  color: #ffffff;
 }
 
 .footer-enhanced h5,
@@ -121,7 +125,7 @@ body {
 }
 
 .footer-link {
-  color: #ccc;
+  color: #ffffff;
   text-decoration: none;
   display: inline-block;
   padding: 2px 0;
@@ -138,8 +142,32 @@ body {
   line-height: 1.5;
 }
 
+.footer-enhanced form .form-control,
+.footer-enhanced form .form-check-label {
+  background: hsl(0, 0%, 93%);
+  border: none;
+  font-size: 0.8rem;
+}
+
+.footer-enhanced form .form-control:focus {
+  box-shadow: 0 0 0 .15rem rgba(255,255,255,0.25);
+}
+
+.footer-enhanced form label {
+  color: #ffffff;
+}
+
+.footer-enhanced .form-check-input {
+  background-color: transparent !important;
+  border: 1px solid #ccc !important;
+}
+
+.footer-enhanced .form-check-label {
+  background-color: transparent !important;
+}
+
 .border-top {
-  border-color: rgba(255,255,255,0.1) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
 }
 .footer-enhanced {
   animation: footerFadeUp .7s ease;
@@ -183,7 +211,7 @@ body {
 }
 
 .shop-item-image-wrapper {
-  background-color: #e8e8e8;
+  background-color: #f3f3f3;
   padding: 0;
   overflow: hidden;
 }
@@ -217,6 +245,7 @@ body {
 .shop-item-price {
   opacity: 0.7;
 }
+
 
 .btn-primary, [class*="silver"] {
   touch-action: manipulation;
