@@ -263,3 +263,12 @@ body {
     line-height: 2em;
     padding: 0 1em;
   }
+
+  [class*="gallery"]{
+    transition: all 0.2s ease-in-out;
+  }
+
+  [class*="gallery"]:hover{
+transform: scale(1.2); 
+transform: rotate(5deg);
+}
