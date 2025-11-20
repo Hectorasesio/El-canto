@@ -277,3 +277,23 @@ section .flip-container {
   width: 100%;   /* Ajusta al tamaño de tus imágenes */
   height: 400px;
 }
+
+.accordion-button {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(100, 97, 92, 0.4),
+    inset 0 -2px 5px 1px rgb(81, 75, 71),
+    inset 0 -1px 1px 3px rgb(203, 201, 196);
+  background-image: linear-gradient(
+    160deg,
+    #181818,
+    #888888,
+    #ffffff,
+    #888888,
+    #181818
+  );
+  border: 1px solid #2e2e2e;
+  color: rgb(254, 254, 254);
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgb(254, 254, 254);
+}
