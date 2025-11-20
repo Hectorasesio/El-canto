@@ -42,12 +42,12 @@ body {
   transition: transform 0.3s cubic-bezier(0.48,0,0.32,1.04);
 }
 .hover-video:hover {
-  transform: scale(1.1); /* Hazlo más grande en hover */
-  z-index: 2; /* Opcional, para que esté delante de otros elementos */
+  transform: scale(1.2);
+  z-index: 2; 
 }
 
 
-[class*="display-1"] {
+[class*="display-1"], [class*="display-4"] {
   font-weight: 500;
   text-transform: uppercase;
 }
