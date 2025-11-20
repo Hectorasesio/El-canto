@@ -269,8 +269,7 @@ body {
   }
 
   [class*="gallery"]:hover{
-transform: scale(1.2); 
-transform: rotate(5deg);
+transform: scale(1.2) rotate(5deg); 
 }
 
 
