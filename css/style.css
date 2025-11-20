@@ -7,24 +7,17 @@
   font-weight: 400;
   font-style: normal;
   scroll-behavior: auto !important;
-  color: var(--color-silver);
 }
 
 :root {
   --color-canto: #BA816D;
-  --color-silver: #C4C4C4;
+  --color-silver: #f0f0f0;
+  --color-black: #0f0f0f ;
 }
 body {
-  background-color: #0f0f0f;
+  background-color: #f0f0f0;
 }
 
-.navbar-brand {
-  color: var(--color-silver);
-}
-
-.navbar-brand:hover {
-  color: var(--color-silver);
-}
 
 .img-horizontal{
   width: 100%;
@@ -223,3 +216,49 @@ body {
 .shop-item-price {
   opacity: 0.7;
 }
+
+.btn-primary, [class*="silver"] {
+  touch-action: manipulation;
+  display: inline-block;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4em;
+  line-height: 2.5em;
+  padding: 0 2em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(100, 97, 92, 0.4),
+    inset 0 -2px 5px 1px rgb(81, 75, 71),
+    inset 0 -1px 1px 3px rgb(203, 201, 196);
+  background-image: linear-gradient(
+    160deg,
+    #181818,
+    #888888,
+    #ffffff,
+    #888888,
+    #181818
+  );
+  border: 1px solid #2e2e2e;
+  color: rgb(36, 35, 34);
+  text-shadow: 0 2px 2px rgb(209, 207, 199);
+  transition: all 0.2s ease-in-out;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+    inset 0 -2px 5px 1px #929290, inset 0 -1px 1px 3px rgb(219, 219, 219);
+  border: 1px solid rgba(63, 62, 61, 0.6);
+  color: rgba(76, 73, 72, 0.8);
+}
+
+.btn-primary:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(80, 77, 73, 0.4),
+    inset 0 -2px 5px 1px #97948f, inset 0 -1px 1px 3px rgb(219, 218, 213);
+  }
+
+  [class*="silver"]{
+    line-height: 2em;
+    padding: 0 1em;
+  }
