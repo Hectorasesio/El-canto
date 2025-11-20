@@ -13,32 +13,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
   </head>
-  <body class="container-fluid-g0">
+  <body class="container-fluid-g0 overflow-hidden">
 
-    <nav class="navbar sticky-top bg-body-tertiary">
+    <nav class="navbar sticky-top bg-body-tertiary overflow-hidden">
       <div class="container-fluid">
-        <a class="navbar-brand" href="about.html">About</a>
-        <a class="navbar-brand moneda" href="index.html"><div id="f1_container">
-            <div id="f1_card" class="shadow">
-              <div class="front face">
-              <img src="media/img/layout.avif" class="img-responsive">
+        <a class="navbar-brand silver" href="about.html">About</a>
+        <a class="navbar-brand m-0 p-0" href="index.html">
+          <div class="flip-container g-0 align-middle">
+              <div class="flipper">
+                <img src="media/img/moneda-1.png" class="front" alt="Logo principal">
+                <img src="media/img/moneda-2.png" class="back" alt="Logo reverso">
               </div>
-              <div class="back face center">
-              <img src="media/img/layout.avif" class="img-responsive">
-              </div>
-            </div>
-          </div></a>
-        <a class="navbar-brand" href="shop.html">Tienda</a>
+          </div>
+        </a>
+        <a class="navbar-brand silver" href="shop.html">Tienda</a>
       </div>
     </nav>
 
-    <section class="container">
+    <section class="container overflow-hidden">
         <div class="row">
             <img src="media/img/layout horizontal.jpg" class="img-fluid" alt="">
         </div>
     </section>
 
-<section class="shop-hero-minimal py-5">
+<section class="shop-hero-minimal py-5 overflow-hidden">
   <div class="container text-center">
     <h2 class="mb-3">Tienda</h2>
     <p class="small text-uppercase tracking">
@@ -47,7 +45,7 @@
   </div>
 </section>
 
-<section class="shop-grid py-5">
+<section class="shop-grid py-5 overflow-hidden">
   <div class="container-fluid">
     <div class="row g-5 justify-content-center">
 
@@ -214,7 +212,20 @@
 </section>
 
     
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+    <script src="js/lenis-init.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
   </body>
 </html>
