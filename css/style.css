@@ -101,6 +101,37 @@ body {
   border-radius: 50%;
 }
 
+
+.hero-knights {
+  position: relative;
+}
+
+/* El texto empieza oculto y aparece con el scroll */
+.hero-text-wrapper {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s linear;
+}
+
+.hero-knight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(50vw, 750px);   /* MÁS GRANDES */
+  pointer-events: none;
+  z-index: 3;
+  transition: transform 0.08s linear;
+}
+
+@media (max-width: 768px) {
+  .hero-knight {
+    width: min(70vw, 480px);
+  }
+}
+
+
 .back {
   transform: rotateY(180deg);
 }
@@ -274,7 +305,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* Animación suave coherente con tu estética */
+
 [data-aos="fade-up"] {
   opacity: 0;
   transform: translateY(20px);
