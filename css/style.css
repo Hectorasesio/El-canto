@@ -139,11 +139,11 @@ body {
 .footer-enhanced {
     background-image: linear-gradient(
     160deg,
-    #181818,
-    #888888,
-    #c9c9c9,
-    #888888,
-    #181818
+    #000000,
+    #585858,
+    #8f8f8f,
+    #585858,
+    #000000
   );
   
   color: #ffffff;
