@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #f2f2f2;
 }
 
 
@@ -75,7 +75,7 @@ body {
 
 .flip-container {
   perspective: 800px;
-  width: 40px;   /* Ajusta al tamaño de tus imágenes */
+  width: 40px;   
   height: 40px;
   display: inline-block;
 }
@@ -98,7 +98,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   backface-visibility: hidden;
-  border-radius: 50%; /* Opcional, si tu logo es redondo */
+  border-radius: 50%;
 }
 
 .back {
@@ -223,11 +223,15 @@ body {
   transition: transform .4s ease;
 }
 
-/* Hover sutil tipo portfolio */
 .shop-item:hover .shop-item-image {
-  transform: scale(1.02);
+  transform: scale(1.06) rotate(3deg);
+  filter: brightness(1.10) contrast(1.05);
+  transition: transform .45s ease, filter .45s ease;
 }
 
+.shop-item-image-wrapper {
+  perspective: 800px;
+} 
 .shop-item-meta {
   display: flex;
   justify-content: space-between;
@@ -244,6 +248,42 @@ body {
 
 .shop-item-price {
   opacity: 0.7;
+}
+
+.shop-intro {
+  font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  line-height: 1.75;
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.shop-intro strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.shop-intro-wrapper {
+  background-color: #f3f3f3;
+  border-radius: 18px;
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Animación suave coherente con tu estética */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -270,7 +310,7 @@ body {
   border: 1px solid #2e2e2e;
   color: rgb(36, 35, 34);
   text-shadow: 0 2px 2px rgb(209, 207, 199);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   background-size: 100% 100%;
   background-position: center;
 }
@@ -294,7 +334,7 @@ body {
   }
 
   [class*="gallery"]{
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   [class*="gallery"]:hover{
@@ -303,7 +343,7 @@ transform: scale(1.2) rotate(5deg);
 
 
 section .flip-container {
-  width: 100%;   /* Ajusta al tamaño de tus imágenes */
+  width: 100%;   
   height: 400px;
 }
 
